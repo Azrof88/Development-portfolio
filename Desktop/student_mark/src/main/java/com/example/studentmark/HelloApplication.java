@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
     // UI Components
     private TextField nameField, rollField, physicsField, chemistryField, mathField;
     private TextArea resultArea;
-    private Button addButton, getButton, updateButton, deleteButton, submitButton;
+    private Button submitButton,addButton,getButton,updateButton,deleteButton;
     private Label nameLabel, physicsLabel, chemistryLabel, mathLabel, rollLabel;
 
     private String currentOperation; // To track the current operation
@@ -33,12 +33,13 @@ public class HelloApplication extends Application {
         chemistryField = new TextField();
         mathField = new TextField();
         resultArea = new TextArea();
+
         resultArea.setEditable(false);
 
-        addButton = new Button("Add Student");
-        getButton = new Button("Get Marks");
-        updateButton = new Button("Update Marks");
-        deleteButton = new Button("Delete Student");
+         addButton = new Button("Add Student");
+         getButton = new Button("Get Marks");
+         updateButton = new Button("Update Marks");
+         deleteButton = new Button("Delete Student");
         submitButton = new Button("Submit");
 
         // Labels for adding student information
@@ -81,7 +82,8 @@ public class HelloApplication extends Application {
         getButton.setOnAction(e -> showRollNumberFieldForGet());
         updateButton.setOnAction(e -> showUpdateFields());
         deleteButton.setOnAction(e -> showRollNumberFieldForDelete());
-        submitButton.setOnAction(e -> handleSubmit());
+        submitButton.setOnAction(e -> handleSubmit());//for this function occuring problem .so we individually call each function .
+        //resetUI();
 
         // Set up the scene
         Scene scene = new Scene(grid, 400, 500);
@@ -127,6 +129,10 @@ public class HelloApplication extends Application {
         submitButton.setVisible(true);
         resultArea.clear();
         resultArea.setText("Enter student details and click Submit.");
+       // submitButton.setOnAction(e -> addStudent());
+
+        //resetUI(); // Reset the UI to its initial state
+        //occuring problem while using this here.we will use this in add student function
     }
 
     private void showRollNumberFieldForGet() {
@@ -138,6 +144,9 @@ public class HelloApplication extends Application {
         submitButton.setVisible(true);
         resultArea.clear();
         resultArea.setText("Enter Roll Number and click Submit.");
+       // submitButton.setOnAction(e -> getMarks());
+
+        //resetUI(); // Reset the UI to its initial state
     }
     private void showRollNumberFieldForDelete() {
         currentOperation ="DELETE";
@@ -148,6 +157,9 @@ public class HelloApplication extends Application {
         submitButton.setVisible(true);
         resultArea.clear();
         resultArea.setText("Enter Roll Number and click Submit.");
+        //submitButton.setOnAction(e -> deleteStudent());
+
+        //resetUI(); // Reset the UI to its initial state
     }
 
     private void showUpdateFields() {
@@ -165,6 +177,9 @@ public class HelloApplication extends Application {
         submitButton.setVisible(true);
         resultArea.clear();
         resultArea.setText("Enter Roll Number and new marks to update.");
+        //submitButton.setOnAction(e -> updateMarks());
+
+        //resetUI(); // Reset the UI to its initial state
     }
 
     private void hideStudentInputFields() {
@@ -183,20 +198,36 @@ public class HelloApplication extends Application {
 
     private void handleSubmit() {
         switch (currentOperation) {
-            case "ADD":
+            case "ADD": {
+
                 addStudent();
+                resetUI();
                 break;
-            case "GET":
+            }
+            case "GET": {
                 getMarks();
+                rollField.clear();
+                nameField.clear();
+                physicsField.clear();
+                chemistryField.clear();
+                mathField.clear();
+                hideStudentInputFields();
                 break;
-            case "UPDATE":
+            }
+            case "UPDATE": {
+
                 updateMarks();
+                resetUI();
                 break;
-            case "DELETE":
+            }
+            case "DELETE": {
+
                 deleteStudent();
+                resetUI();
                 break;
+            }
         }
-        resetUI(); // Reset the UI to its initial state
+        //resetUI(); // Reset the UI to its initial state
     }
 
     private void resetUI() {
@@ -248,6 +279,7 @@ public class HelloApplication extends Application {
             e.printStackTrace();
             resultArea.setText("Error adding student: " + e.getMessage());
         }
+        resetUI(); // Reset the UI to its initial state
     }
 
     private void getMarks() {
@@ -287,6 +319,7 @@ public class HelloApplication extends Application {
                         "Math: " + math + "\n" +
                         "Total Mark: " + totalMark + "\n" +
                         "Average Mark: " + averageMark);
+
             } else {
                 resultArea.setText("No student found with roll number: " + roll);
             }
@@ -294,6 +327,7 @@ public class HelloApplication extends Application {
             e.printStackTrace();
             resultArea.setText("Error retrieving marks: " + e.getMessage());
         }
+       // resetUI(); // Reset the UI to its initial state
     }
 
     private void updateMarks() {
@@ -359,6 +393,7 @@ public class HelloApplication extends Application {
         } else {
             resultArea.setText("Please enter at least one mark to update.");
         }
+        resetUI(); // Reset the UI to its initial state
     }
 
     private void deleteStudent() {
@@ -391,5 +426,6 @@ public class HelloApplication extends Application {
             e.printStackTrace();
             resultArea.setText("Error deleting student: " + e.getMessage());
         }
+        resetUI(); // Reset the UI to its initial state
     }
 }
