@@ -1,6 +1,8 @@
 package com.example.sqlite_add;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
@@ -13,7 +15,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.SQLException;
 public class HelloApplication extends Application {
-    private static final String DATABASE_URL = "jdbc:sqlite:E:/Desktop/Sqlite_add/sample.db";
+    private static final String DATABASE_URL = "jdbc:sqlite:E:/Development-portfolio/Desktop/Sqlite_add/sample.db";
 
     @Override
     public void start(Stage primaryStage) {
@@ -21,7 +23,13 @@ public class HelloApplication extends Application {
         textArea.setEditable(false);
         Button loadButton = new Button("Load Data");
 
-        loadButton.setOnAction(event -> loadData(textArea));
+        loadButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                loadData(textArea);
+            }
+        });
+
 
         VBox vbox = new VBox(loadButton, textArea);
         Scene scene = new Scene(vbox, 400, 300);
@@ -30,10 +38,16 @@ public class HelloApplication extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+//using thread to run in background with lamda expression
+//This is how you retrieve data from the database.
+// The ResultSet allows you to iterate over the rows returned by the query.
+private void loadData(TextArea textArea) {
+    StringBuilder data = new StringBuilder();
 
-    private void loadData(TextArea textArea) {
-        StringBuilder data = new StringBuilder();
-        new Thread(() -> {
+    // Using an anonymous inner class instead of a lambda expression
+    new Thread(new Runnable() {
+        @Override
+        public void run() {
             try (Connection connection = DriverManager.getConnection(DATABASE_URL);
                  Statement statement = connection.createStatement()) {
 
@@ -48,9 +62,16 @@ public class HelloApplication extends Application {
                 data.append("Error: ").append(e.getMessage());
             }
             // Update the UI on the JavaFX Application Thread
-            javafx.application.Platform.runLater(() -> textArea.setText(data.toString()));
-        }).start();
-    }
+            javafx.application.Platform.runLater(new Runnable() {
+                @Override
+                public void run() {
+                    textArea.setText(data.toString());
+                }
+            });
+        }
+    }).start();
+}
+
 
 
     public static void main(String[] args) {
