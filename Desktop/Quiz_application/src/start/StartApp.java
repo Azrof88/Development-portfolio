@@ -21,7 +21,7 @@ public class StartApp extends Application {
 //        Parent root = FXMLLoader.load(getClass().
 //                getResource("../fxml/AdminHomeScreenFXML.fxml"));
         Stage stage = new Stage();
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root,300,300);
         stage.setScene(scene);
 //        stage.setMaximized(true);
         stage.show();

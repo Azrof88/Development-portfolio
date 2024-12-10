@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="controlsfx-8.40.11" level="project" />
+    <orderEntry type="library" name="jfoenix-8.0.8" level="project" />
+    <orderEntry type="library" name="json-java" level="project" />
     <orderEntry type="library" name="openwebstart" level="project" />
-    <orderEntry type="library" name="java-json" level="project" />
   </component>
 </module>

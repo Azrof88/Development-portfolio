@@ -5,27 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/jfoenix-9.0.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/java/com/example/constants/AdminEmailPassword.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/java/com/example/controllers/AddQuizFXMLController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/java/com/example/controllers/AdminHomeScreenFXMLController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/java/com/example/quizApplication/AdminLoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/java/com/example/start/StartApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/resources/com/example/quizApplication/AddHomeScreenFXML.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/resources/com/example/quizApplication/AddQuizFXML.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../QuizApplication/src/main/resources/com/example/quizApplication/AdminLoginFXML.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../student_mark/.idea/sqldialects.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openwebstart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_java.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/json_java.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quiz_Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Quiz_Application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz_Application/META-INF/Quiz_Application.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (0).json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (0).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (1).json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (1).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (2).json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (2).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (3).json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (3).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (4).json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Quiz_Application/util/sample_data/quizzes/api (4).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.db" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/DatabaseConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/DatabaseConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/start/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/start/StartApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (0).json" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (0).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (1).json" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (1).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (2).json" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (2).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (3).json" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (3).json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (4).json" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/sample_data/quizzes/api (4).json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +93,14 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="1Zz4CTQfr3blFbddq5h55IUZszL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,27 +111,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Computer-app/Jars/java-json.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Azrof/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dell\IdeaProjects\Quiz_application\src\util\sample_data\quizzes" />
@@ -281,9 +289,26 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1731852251876" duration="2378000" />
-      <workItem from="1731854783592" duration="1002000" />
-      <workItem from="1731855799395" duration="166000" />
+      <workItem from="1733220621686" duration="529000" />
+      <workItem from="1733221245386" duration="137000" />
+      <workItem from="1733513136504" duration="112000" />
+      <workItem from="1733513295369" duration="69000" />
+      <workItem from="1733679656025" duration="13000" />
+      <workItem from="1733679734301" duration="11000" />
+      <workItem from="1733680765654" duration="14000" />
+      <workItem from="1733766914789" duration="299000" />
+      <workItem from="1733774192292" duration="297000" />
+      <workItem from="1733850969586" duration="138000" />
+      <workItem from="1733852275472" duration="70000" />
+      <workItem from="1733852937607" duration="86000" />
+      <workItem from="1733853270465" duration="241000" />
+      <workItem from="1733853899643" duration="28000" />
+      <workItem from="1733853949826" duration="853000" />
+      <workItem from="1733864202826" duration="2286000" />
+      <workItem from="1733868149974" duration="177000" />
+      <workItem from="1733868381366" duration="61000" />
+      <workItem from="1733868527555" duration="113000" />
+      <workItem from="1733868653662" duration="39000" />
     </task>
     <servers />
   </component>
@@ -309,6 +334,10 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Quiz_application$Main.ic" NAME="Main Coverage Results" MODIFIED="1588422254708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

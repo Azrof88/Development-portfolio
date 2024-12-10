@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXButton?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.student.StudentAllQuizzesController"
+            prefHeight="400.0" prefWidth="600.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+        <children>
+
+            <VBox fx:id="formContainer" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <padding>
+                    <Insets left="10.0" right="10.0" top="20.0" />
+                </padding>
+                <children>
+                    <Label prefHeight="41.0" prefWidth="221.0" text="Enter Student Details" textAlignment="CENTER" textFill="#1e69eb">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                        <font>
+                            <Font name="System Bold" size="15.0" />
+                        </font>
+                    </Label>
+                    <Separator prefHeight="21.0" prefWidth="165.0">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </Separator>
+                    <JFXTextField fx:id="firstName" promptText="First Name">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                    </JFXTextField>
+                    <JFXTextField fx:id="lastName" promptText="Second Name">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                    </JFXTextField>
+                    <JFXTextField fx:id="email" promptText="Email">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                        <VBox.margin>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                    </JFXTextField>
+                    <JFXPasswordField fx:id="password" promptText="Password">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                        <VBox.margin>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                    </JFXPasswordField>
+                    <JFXTextField fx:id="mobileNumber" promptText="Mobile Number">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                    </JFXTextField>
+                    <Separator prefHeight="21.0" prefWidth="165.0">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </Separator>
+                    <Label text="Gender">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </Label>
+                    <JFXRadioButton fx:id="male" text="Male">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </JFXRadioButton>
+                    <JFXRadioButton fx:id="female" text="Femle">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </JFXRadioButton>
+                    <Separator prefHeight="21.0" prefWidth="165.0">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </Separator>
+                    <JFXButton fx:id="saveButton" onAction="#saveStudent" text="Save Student">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </JFXButton>
+                </children>
+            </VBox>
+        </children>
+    </AnchorPane>
+
+</AnchorPane>
