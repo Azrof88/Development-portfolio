@@ -9,7 +9,7 @@
    <children>
       <JFXTabPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <tabs>
-            <Tab fx:id="dashboard" text="Dashboard" />
+
             <Tab fx:id="allQuizzes" text="All Quizzes" />
             <Tab fx:id="attempedQuizzes" text="Attemped Quizzes" />
          </tabs>
